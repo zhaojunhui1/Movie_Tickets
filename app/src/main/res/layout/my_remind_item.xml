@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_20"
+    android:layout_marginLeft="@dimen/dp_24"
+    android:layout_marginRight="@dimen/dp_24"
+    android:orientation="vertical">
+
+
+    <!--  提醒信息  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/remind_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dp_16"
+                android:textColor="#333333"
+                android:text="电影信息"
+                />
+            <TextView
+                android:id="@+id/remind_details"
+                android:layout_width="@dimen/dp_208"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#333333"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="有两部新电影即将上映"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/datatime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#333333"
+                android:text="08:00" />
+
+            <!-- 消息提醒 -->
+            <RelativeLayout
+                android:id="@+id/message"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/datatime"
+                android:background="@drawable/my_remind_number"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/message_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="1"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sp_12" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!--  虚线  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="#cccccc"/>
+
+
+</LinearLayout>

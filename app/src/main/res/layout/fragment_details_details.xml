@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--  定位  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/cinema_detail_icon_location_default"
+            />
+        <TextView
+            android:id="@+id/details_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_34"
+            />
+    </RelativeLayout>
+
+    <!--  热线  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20">
+
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/cinema_detail_icon_phone_default"
+            />
+        <TextView
+            android:id="@+id/details_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_34"
+            />
+    </RelativeLayout>
+
+    <!--  路线   -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20">
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/cinema_detail_icon_route_default"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#333333"
+            android:text="乘车路线"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_34"
+            />
+
+    </RelativeLayout>
+
+    <!--  详细路线  -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="地铁:"
+        android:textSize="@dimen/sp_12"
+        android:textColor="#333333"
+        />
+
+    <TextView
+        android:id="@+id/details_subway"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_12"
+        android:textColor="#333333"
+        android:layout_marginTop="@dimen/dp_10"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="公交:"
+        android:textSize="@dimen/sp_12"
+        android:textColor="#333333"
+        />
+
+    <TextView
+        android:id="@+id/details_bus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_12"
+        android:textColor="#333333"
+        android:layout_marginTop="@dimen/dp_10"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="自驾:"
+        android:textSize="@dimen/sp_12"
+        android:textColor="#333333"
+        />
+
+    <TextView
+        android:id="@+id/details_self"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_12"
+        android:textColor="#333333"
+        android:layout_marginTop="@dimen/dp_10"
+        />
+
+</LinearLayout>

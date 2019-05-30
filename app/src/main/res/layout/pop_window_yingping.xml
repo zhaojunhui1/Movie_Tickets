@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pop_line"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_120"
+        android:background="@drawable/xiangqing_shape_pop"
+        fresco:layout_constraintLeft_toLeftOf="parent"
+        fresco:layout_constraintRight_toRightOf="parent"
+        fresco:layout_constraintTop_toTopOf="parent" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_140"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:text="影评"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_24"
+        />
+
+    <ImageView
+        android:id="@+id/yingping_pop_xia"
+        android:src="@mipmap/xia"
+        android:layout_marginLeft="@dimen/dp_240"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+     <com.jcodecraeer.xrecyclerview.XRecyclerView
+         android:id="@+id/yingping_pop_rec"
+         android:layout_marginTop="@dimen/dp_180"
+         android:layout_marginLeft="@dimen/dp_24"
+         android:layout_marginRight="@dimen/dp_24"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/tianjia_pinglun"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="27dp"
+        android:src="@mipmap/com_icon_publish_default" />
+
+</RelativeLayout>

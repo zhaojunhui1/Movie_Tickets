@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         >
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/juzhao_item_image1"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_width="@dimen/dp_151"
+        android:layout_height="@dimen/dp_150" />
+
+     <com.facebook.drawee.view.SimpleDraweeView
+         android:id="@+id/juzhao_item_image2"
+         android:layout_marginTop="@dimen/dp_24"
+         android:layout_marginLeft="@dimen/dp_24"
+         android:layout_width="@dimen/dp_151"
+         android:layout_height="@dimen/dp_190" />
+
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         >
+
+          <com.facebook.drawee.view.SimpleDraweeView
+              android:id="@+id/juzhao_item_image3"
+              android:layout_marginTop="@dimen/dp_24"
+              android:layout_marginLeft="@dimen/dp_24"
+              android:layout_width="@dimen/dp_151"
+              android:layout_height="@dimen/dp_190" />
+
+
+          <com.facebook.drawee.view.SimpleDraweeView
+              android:id="@+id/juzhao_item_image4"
+              android:layout_marginTop="@dimen/dp_24"
+              android:layout_marginLeft="@dimen/dp_24"
+              android:layout_width="@dimen/dp_151"
+              android:layout_height="@dimen/dp_150" />
+
+     </LinearLayout>
+
+
+</LinearLayout>

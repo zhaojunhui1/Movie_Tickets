@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--  默认   -->
+    <item android:state_checked="true">
+
+        <shape>
+            <corners android:radius="@dimen/dp_4" />
+            <gradient
+                android:startColor="#e8175e"
+                android:endColor="#440a33"
+                android:angle="0" />
+        </shape>
+    </item>
+
+
+    <!--   选中  -->
+    <item android:state_checked="false">
+        <shape>
+            <corners android:radius="@dimen/dp_4" />
+            <solid android:color="#ffffff" />
+            <stroke
+                android:width="@dimen/dp_2"
+                android:color="#eee" />
+        </shape>
+        <!--<layer-list>
+            <item>
+                <shape>
+                    <corners android:radius="@dimen/dp_4" />
+                    <solid android:color="#ffffff" />
+                    <stroke android:width="@dimen/dp_2" android:color="#eeeeee" />
+                </shape>
+            </item>
+        </layer-list>-->
+    </item>
+
+</selector>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_186"
+                    android:background="@mipmap/lunbei"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/fragmone_dong"
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="@dimen/dp_24"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dp_40"
+                    android:background="@drawable/shape_search_home">
+
+                    <ImageView
+                        android:id="@+id/fragmone_sou"
+                        android:src="@mipmap/com_icon_search_default"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        />
+
+                    <TextView
+                        android:hint="搜索"
+                        android:layout_marginLeft="@dimen/dp_24"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+
+                <!--   旋转木马相册    -->
+                <recycler.coverflow.RecyclerCoverFlow
+                    android:id="@+id/lubo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_223"
+                    android:layout_marginLeft="@dimen/dp_24"
+                    android:layout_marginTop="@dimen/dp_85"
+                    android:layout_marginRight="@dimen/dp_24"
+                    />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_40"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_24"
+                    android:text="热门电影"
+                    android:textSize="@dimen/dp_20" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:layout_width="@dimen/dp_35"
+                        android:layout_height="@dimen/dp_10"
+                        android:layout_marginLeft="@dimen/dp_25"
+                        android:layout_marginTop="@dimen/dp_6"
+                        android:background="@mipmap/xiatiao" />
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/emen_you"
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_marginLeft="@dimen/dp_250"
+                        android:background="@mipmap/you" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_24"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rmen_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_40"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_24"
+                    android:text="正在热映"
+                    android:textSize="@dimen/dp_20" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:layout_width="@dimen/dp_35"
+                        android:layout_height="@dimen/dp_10"
+                        android:layout_marginLeft="@dimen/dp_25"
+                        android:layout_marginTop="@dimen/dp_6"
+                        android:background="@mipmap/xiatiao" />
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/eying_you"
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_marginLeft="@dimen/dp_250"
+                        android:background="@mipmap/you" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_24"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rmen2_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_40"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_24"
+                    android:text="即将上映"
+                    android:textSize="@dimen/dp_20" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:layout_width="@dimen/dp_35"
+                        android:layout_height="@dimen/dp_10"
+                        android:layout_marginLeft="@dimen/dp_25"
+                        android:layout_marginTop="@dimen/dp_6"
+                        android:background="@mipmap/xiatiao" />
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/jijiang_you"
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_marginLeft="@dimen/dp_250"
+                        android:background="@mipmap/you" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_24"
+                    android:layout_marginBottom="@dimen/dp_20"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rmen3_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

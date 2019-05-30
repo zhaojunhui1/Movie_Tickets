@@ -1,0 +1,5 @@
+<explode
+    xmlns:android="http://schemas.Android.com/apk/res/Android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:duration="300"
+    tools:ignore="NamespaceTypo" />

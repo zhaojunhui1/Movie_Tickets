@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_148"
+    android:layout_marginTop="@dimen/dp_20"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/my_btn_class"
+    android:orientation="horizontal">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/my_movie_image"
+        android:layout_width="@dimen/dp_103"
+        android:layout_height="@dimen/dp_128"
+        app:roundedCornerRadius="@dimen/dp_4"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dp_10"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_128"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/my_movie_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_14"
+                android:textColor="#333333"
+                android:text="无双"
+                />
+
+            <TextView
+                android:id="@+id/my_movie_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#333333"
+                android:ellipsize="end"
+                android:maxLines="5"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/my_movie_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#999999"
+            android:text="2019_01_01"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

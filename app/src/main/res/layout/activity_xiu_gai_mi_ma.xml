@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fmk.activity.XiuGaiMiMaActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_marginLeft="@dimen/dp_24"
+        >
+
+    <TextView
+        android:text="当前密码"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/dang_qian"
+        android:text="1"
+        android:layout_marginLeft="@dimen/dp_180"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_60"
+        android:layout_marginLeft="@dimen/dp_24"
+        >
+
+        <TextView
+            android:text="新密码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/xin"
+            android:text="888888"
+            android:layout_marginLeft="@dimen/dp_190"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_120"
+        android:layout_marginLeft="@dimen/dp_24"
+        >
+
+        <TextView
+            android:text="确认新密码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/queren_xin"
+            android:text="888888"
+            android:layout_marginLeft="@dimen/dp_160"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_180"
+        android:layout_marginLeft="@dimen/dp_80"
+        >
+
+        <Button
+            android:id="@+id/xiu_tijao"
+            android:text="提交"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="@dimen/dp_50" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:src="@mipmap/fanhui"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_300"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40" />
+
+</RelativeLayout>

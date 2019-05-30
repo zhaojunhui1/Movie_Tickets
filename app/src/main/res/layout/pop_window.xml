@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pop_line"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_100"
+        android:background="@drawable/xiangqing_shape_pop"
+        fresco:layout_constraintLeft_toLeftOf="parent"
+        fresco:layout_constraintRight_toRightOf="parent"
+        fresco:layout_constraintTop_toTopOf="parent" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/xiangqing_pop_image"
+        android:layout_width="@dimen/dp_111"
+        android:layout_height="@dimen/dp_149"
+        android:layout_marginTop="@dimen/dp_80"
+        android:layout_marginLeft="@dimen/dp_24"
+       />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_120"
+        android:layout_marginLeft="@dimen/dp_160"
+        >
+    <TextView
+    android:text="类型:"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_20"
+    />
+
+    <TextView
+        android:id="@+id/xiangqing_pop_leixing"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:text="动作/科幻/冒险"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+        <ImageView
+            android:id="@+id/xiangqing_pop_xia"
+            android:src="@mipmap/xia"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginLeft="@dimen/dp_160"
+        >
+    <TextView
+        android:text="导演:"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/xiangqing_pop_daoyan"
+        android:text="导演:"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginLeft="@dimen/dp_160"
+        >
+    <TextView
+        android:text="时长:"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/xiangqing_pop_shichang"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:text="时长:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginLeft="@dimen/dp_160"
+        >
+    <TextView
+        android:text="产地:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        />
+
+    <TextView
+        android:id="@+id/xiangqing_pop_chandi"
+        android:text="产地:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        />
+    </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_290"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:text="剧情简介"
+        android:textSize="@dimen/dp_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/xiangqing_pop_juqing"
+        android:layout_marginTop="@dimen/dp_24"
+        android:text="剧情简介"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_344"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:id="@+id/yanzhi"
+        android:text="演职人员"
+        android:textSize="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/renyuan"
+        android:text="演员名字"
+        android:textSize="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/xiang_pop_xrec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

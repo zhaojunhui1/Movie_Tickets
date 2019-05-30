@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".zjh.ui.cinema.my.MyPresonActivity">
+
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         >
+         <TextView
+             android:text="用户信息"
+             android:textSize="@dimen/dp_20"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/dp_30"
+             android:layout_marginLeft="@dimen/dp_24"
+             />
+     </LinearLayout>
+
+          <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+
+              <View
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/dp_250"
+                  android:layout_marginTop="@dimen/dp_90"
+                  android:layout_marginLeft="@dimen/dp_24"
+                  android:layout_marginRight="@dimen/dp_24"
+                  android:background="@drawable/my_shape_wode"
+                  />
+
+              <!--1-->
+
+              <TextView
+                      android:text="用户头像"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="@dimen/dp_48"
+                      android:layout_marginTop="@dimen/dp_120"
+                      />
+
+                 <com.facebook.drawee.view.SimpleDraweeView
+                     android:id="@+id/wode_tou"
+                     android:background="@mipmap/cinema_detail_icon_route_default"
+                     android:layout_width="@dimen/dp_30"
+                     android:layout_height="@dimen/dp_30"
+                     android:layout_marginLeft="@dimen/dp_260"
+                     android:layout_marginTop="@dimen/dp_110"
+                     />
+
+                 <View
+                     android:layout_width="@dimen/dp_262"
+                     android:layout_height="@dimen/dp_2"
+                     android:layout_marginLeft="@dimen/dp_50"
+                     android:layout_marginTop="@dimen/dp_150"
+                     android:src="@drawable/my_shape_xianer"
+                     android:background="#f2ebeb"
+                     />
+
+              <!--2-->
+
+              <TextView
+                  android:text="用户昵称"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/dp_48"
+                  android:layout_marginTop="@dimen/dp_180"
+                  />
+
+              <TextView
+                  android:id="@+id/wode_name"
+                  android:text="用户昵称"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/dp_260"
+                  android:layout_marginTop="@dimen/dp_180"
+                  />
+
+              <View
+                  android:layout_width="@dimen/dp_262"
+                  android:layout_height="@dimen/dp_2"
+                  android:layout_marginLeft="@dimen/dp_50"
+                  android:layout_marginTop="@dimen/dp_210"
+                  android:src="@drawable/my_shape_xianer"
+                  android:background="#f2ebeb"
+                  />
+
+              <!--3-->
+
+              <TextView
+                  android:text="用户性别"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/dp_48"
+                  android:layout_marginTop="@dimen/dp_240"
+                  />
+
+              <TextView
+                  android:id="@+id/wode_xing"
+                  android:text="用户性别"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/dp_260"
+                  android:layout_marginTop="@dimen/dp_240"
+                  />
+
+              <View
+                  android:layout_width="@dimen/dp_262"
+                  android:layout_height="@dimen/dp_2"
+                  android:layout_marginLeft="@dimen/dp_50"
+                  android:layout_marginTop="@dimen/dp_270"
+                  android:src="@drawable/my_shape_xianer"
+                  android:background="#f2ebeb"
+                  />
+
+
+              <!--4-->
+
+              <TextView
+                  android:text="出生日期"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/dp_48"
+                  android:layout_marginTop="@dimen/dp_300"
+                  />
+
+              <TextView
+                  android:id="@+id/wode_sheng"
+                  android:text="出生日期"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/dp_260"
+                  android:layout_marginTop="@dimen/dp_300"
+                  />
+
+          </RelativeLayout>
+
+      <!--二-->
+
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dp_370"
+          android:layout_marginLeft="@dimen/dp_24"
+          android:layout_marginRight="@dimen/dp_24"
+          >
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dp_160"
+              android:background="@drawable/my_shape_wode"
+              />
+
+          <TextView
+              android:text="手机号"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/dp_30"
+              android:layout_marginTop="@dimen/dp_30"
+              />
+
+          <TextView
+              android:id="@+id/wode_shou"
+              android:text="手机号"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/dp_240"
+              android:layout_marginTop="@dimen/dp_30"
+              />
+
+          <View
+              android:layout_width="@dimen/dp_262"
+              android:layout_height="@dimen/dp_2"
+              android:layout_marginLeft="@dimen/dp_30"
+              android:layout_marginTop="@dimen/dp_60"
+              android:src="@drawable/my_shape_xianer"
+              android:background="#f2ebeb"
+              />
+
+
+          <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/dp_30"
+          android:layout_marginTop="@dimen/dp_80"
+          android:text="邮箱" />
+
+          <TextView
+              android:id="@+id/wode_you"
+              android:text="邮箱"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/dp_180"
+              android:layout_marginTop="@dimen/dp_80"
+              />
+
+          <View
+              android:layout_width="@dimen/dp_262"
+              android:layout_height="@dimen/dp_2"
+              android:layout_marginLeft="@dimen/dp_30"
+              android:layout_marginTop="@dimen/dp_110"
+              android:src="@drawable/my_shape_xianer"
+              android:background="#f2ebeb"
+              />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/dp_30"
+              android:layout_marginTop="@dimen/dp_130"
+              android:text="上次登录时间" />
+
+          <TextView
+              android:id="@+id/wode_shi"
+              android:text="上次登录时间"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/dp_220"
+              android:layout_marginTop="@dimen/dp_130"
+              />
+
+      </RelativeLayout>
+
+
+    <!--三-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="640dp"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_24"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_70"
+            android:background="@drawable/my_shape_wode"
+            />
+
+        <TextView
+            android:text="重置密码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_30"
+            />
+
+        <ImageView
+            android:id="@+id/wode_chong"
+            android:background="@mipmap/you"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_240"
+            android:layout_marginTop="@dimen/dp_30"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/yong_fan"
+        android:src="@mipmap/fanhui"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_500"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40" />
+
+
+</RelativeLayout>

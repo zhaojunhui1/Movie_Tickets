@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_178"
+    android:background="@drawable/shape_seat_pay_choose"
+    android:orientation="vertical">
+
+    <!--  选择支付方式 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_138">
+        <!--  文字描述 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_14"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_16"
+                android:text="选择支付方式"/>
+            <!--   微信   -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20">
+                <ImageView
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:src="@mipmap/pay_icon_weixin_default"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_34"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/dp_14"
+                    android:textColor="#666666"
+                    android:text="微信支付"
+                    />
+            </RelativeLayout>
+            <!--  支付宝  -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20">
+                <ImageView
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:src="@mipmap/pay_icon_zhifubao_default"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_34"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/dp_14"
+                    android:textColor="#666666"
+                    android:text="支付宝支付"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--  单选框  -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_14"
+            android:orientation="vertical">
+            <!--  下  拉按钮  -->
+            <RelativeLayout
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24">
+                <ImageView
+                    android:id="@+id/dismiss_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/com_icon_down_default"/>
+            </RelativeLayout>
+            <!--  按钮 -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_100">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_100"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radio_weixin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/select_check_type"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:id="@+id/radio_zifubao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/select_check_type" />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--  支付按钮  提交  -->
+    <RelativeLayout
+        android:id="@+id/pay_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/pay_submit">
+        <!--/ 总价-->
+        <TextView
+            android:id="@+id/type_priceAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_16"
+            android:textColor="#ffffff"
+            android:text="微信支付53.9元"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

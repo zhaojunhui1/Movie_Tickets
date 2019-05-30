@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="false" >
+   />
+
+    <padding
+        android:left="@dimen/dp_10"
+        android:top="@dimen/dp_10"
+        android:right="@dimen/dp_10"
+        android:bottom="@dimen/dp_10"
+        />
+
+    <!--填充颜色-->
+    <solid android:color="#F8852C"/>
+
+
+    <!--渐变-->
+    <gradient
+        android:startColor="#EAAD4E"
+        android:centerColor="#F8852C"
+        android:endColor="#F8852C"
+        android:angle="0"/>
+
+
+    <size android:width="15dp"
+        android:height="15dp" />
+</shape>

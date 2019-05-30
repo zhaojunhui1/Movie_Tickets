@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_467"
+        android:background="@drawable/shape_details_frag_bg"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_21">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/cinema_tabLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:tabTextAppearance="@style/TabLayoutTextStyle"
+                app:tabTextColor="#333333"
+                app:tabSelectedTextColor="#333333"
+                app:tabIndicatorHeight="3dp"
+                app:tabIndicatorColor="@color/colorAccent"
+                app:tabIndicatorFullWidth="false"
+                app:tabMode="fixed"
+                />
+
+            <!--  退出 -->
+            <ImageView
+                android:id="@+id/details_down"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_24"
+                android:src="@mipmap/com_icon_down_default" />
+
+        </RelativeLayout>
+
+        <!--  fragment  -->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/cinema_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginRight="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_10"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

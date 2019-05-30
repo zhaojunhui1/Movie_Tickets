@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fmk.fragment.FragmentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/movie_framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.bw.movie.fmk.fragment.CustomViewPager
+                android:id="@+id/movie_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100"
+            android:layout_alignParentBottom="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100"
+                android:layout_alignParentBottom="true"
+                android:alpha="0.3"
+                android:background="@drawable/gradlient_background" />
+
+            <RadioGroup
+                android:id="@+id/movie_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/dp_34"
+                android:layout_marginRight="@dimen/dp_34"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_movie_home"
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="@dimen/dp_60"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/selector_movie_home"
+                    android:button="@null"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/rb_movie_cinema"
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="@dimen/dp_60"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/dp_50"
+                    android:layout_marginRight="@dimen/dp_50"
+                    android:background="@drawable/selector_movie_cinema"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/rb_movie_my"
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="@dimen/dp_60"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/selector_movie_my"
+                    android:button="@null" />
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

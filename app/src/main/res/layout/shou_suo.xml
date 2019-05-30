@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_36">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_220"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+
+        <SlidingDrawer
+            android:id="@+id/slidingdrawer"
+            android:layout_width="@dimen/dp_220"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:content="@+id/content"
+            android:handle="@+id/handle"
+            android:orientation="horizontal"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true">
+
+            <ImageButton
+                android:id="@+id/handle"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_24"
+                android:background="@drawable/shape_search_home"
+                android:src="@mipmap/com_icon_search_default" />
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_24"
+                android:background="@drawable/gradient_sou">
+
+                <EditText
+                    android:id="@+id/edit_value"
+                    android:layout_width="@dimen/dp_146"
+                    android:layout_height="@dimen/dp_24"
+                    android:hint="请输入搜索内容"
+                    android:textColorHint="#f2f2f2"
+                    android:textSize="@dimen/dp_12"
+                    android:textColor="#f2f2f2"
+                    android:singleLine="true"
+                    android:typeface="serif"
+                    android:background="@null"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_search_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="搜索"
+                        android:textSize="12sp"
+                        android:textColor="#ffffff"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </SlidingDrawer>
+
+    </RelativeLayout>
+
+</RelativeLayout>

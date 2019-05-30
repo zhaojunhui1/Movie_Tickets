@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_20"
+    android:background="@drawable/my_btn_class">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <!--  电影  -->
+        <TextView
+            android:id="@+id/movie_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="铁血战士"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_14" />
+
+        <!--  播放时长  -->
+        <TextView
+            android:id="@+id/starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_14"
+            android:textColor="#f77421"
+            android:layout_marginTop="@dimen/dp_10"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_14"
+            android:textColor="#f77421"
+            android:layout_marginTop="@dimen/dp_4"
+            android:text="开始时间  结束时间"
+            />
+
+        <!--  单号  -->
+        <TextView
+            android:id="@+id/orderid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="$$$$"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_12" />
+        <!--  下单时间  -->
+        <TextView
+            android:id="@+id/datatime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="$$$$"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_12" />
+
+        <!--  影院   -->
+        <TextView
+            android:id="@+id/cinema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="$$$$"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_12" />
+
+        <!--  影厅  -->
+        <TextView
+            android:id="@+id/house"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="$$$$"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_12" />
+
+
+        <!--  数量   -->
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="$$$$"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_12" />
+
+        <!--  金额  -->
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:text="$$$$"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_12" />
+
+    </LinearLayout>
+
+</RelativeLayout>

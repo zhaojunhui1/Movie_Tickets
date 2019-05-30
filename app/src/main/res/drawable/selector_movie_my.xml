@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--  默认   -->
+    <item android:state_checked="false">
+        <layer-list>
+            <item
+                android:left="@dimen/dp_5"
+                android:right="@dimen/dp_5"
+                android:top="@dimen/dp_5"
+                android:bottom="@dimen/dp_5"
+                android:drawable="@mipmap/com_icon_my_default"/>
+        </layer-list>
+    </item>
+
+    <!--   选中  -->
+    <item android:state_checked="true">
+        <layer-list>
+            <item android:drawable="@mipmap/com_icon_my_selected"/>
+        </layer-list>
+    </item>
+</selector>

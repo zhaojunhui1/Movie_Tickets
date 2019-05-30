@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!--圆角-->
+    <corners
+        android:radius="@dimen/dp_10" />
+
+    <padding
+        android:left="@dimen/dp_10"
+        android:top="@dimen/dp_10"
+        android:right="@dimen/dp_10"
+        android:bottom="@dimen/dp_10"
+        />
+
+    <!--填充颜色-->
+    <solid android:color="#4F0732"/>
+
+    <!--边框-->
+    <stroke
+        android:color="#4F0732"
+        android:width="@dimen/dp_2"/>
+
+    <!--渐变-->
+    <gradient
+        android:startColor="#CD1657"
+        android:centerColor="#5D0C39"
+        android:endColor="#5D0C39"
+        android:angle="0"/>
+
+</shape>

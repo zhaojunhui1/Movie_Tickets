@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fmk.activity.ZhuCeActivity"
+    android:background="@mipmap/deng"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_50"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:background="@mipmap/nicheng"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_15" />
+
+            <EditText
+                android:id="@+id/nicheng"
+                android:layout_gravity="center_horizontal"
+                android:hint="昵称:"
+                android:maxLines="1"
+                android:ems="12"
+                android:textSize="25dp"
+                android:textColor="#fcf9f9"
+                android:textColorHint="#fcf9f9"
+                android:paddingLeft="@dimen/dp_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:background="@mipmap/xingbei"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_15" />
+
+            <EditText
+                android:id="@+id/xing"
+                android:layout_gravity="center_horizontal"
+                android:hint="性别:"
+                android:maxLines="1"
+                android:ems="12"
+                android:textSize="25dp"
+                android:textColor="#fcf9f9"
+                android:textColorHint="#fcf9f9"
+                android:paddingLeft="@dimen/dp_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:background="@mipmap/chusheng"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_15" />
+
+            <EditText
+                android:id="@+id/chusheng"
+                android:layout_gravity="center_horizontal"
+                android:hint="出生日期:"
+                android:maxLines="1"
+                android:ems="12"
+                android:textSize="25dp"
+                android:textColor="#fcf9f9"
+                android:textColorHint="#fcf9f9"
+                android:paddingLeft="@dimen/dp_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:background="@mipmap/shou"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_15" />
+
+            <EditText
+                android:id="@+id/zhuphone"
+                android:layout_gravity="center_horizontal"
+                android:hint="手机号:"
+                android:maxLines="1"
+                android:ems="12"
+                android:textSize="25dp"
+                android:textColor="#fcf9f9"
+                android:textColorHint="#fcf9f9"
+                android:paddingLeft="@dimen/dp_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:background="@mipmap/youxiang"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_15" />
+
+            <EditText
+                android:id="@+id/youxiang"
+                android:layout_gravity="center_horizontal"
+                android:hint="邮箱:"
+                android:maxLines="1"
+                android:ems="12"
+                android:textSize="25dp"
+                android:textColor="#fcf9f9"
+                android:textColorHint="#fcf9f9"
+                android:paddingLeft="@dimen/dp_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/suo"
+                android:background="@mipmap/registeri"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_marginLeft="10dp"
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_15" />
+
+            <EditText
+                android:id="@+id/zhupwd"
+                android:layout_gravity="center_horizontal"
+                android:hint="登录密码:"
+                android:maxLines="1"
+                android:ems="12"
+                android:textSize="25dp"
+                android:textColor="#fcf9f9"
+                android:textColorHint="#fcf9f9"
+                android:paddingLeft="@dimen/dp_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:background="@mipmap/registeri"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_marginLeft="10dp"
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_15" />
+
+            <EditText
+                android:id="@+id/zhupwdque"
+                android:layout_gravity="center_horizontal"
+                android:hint="确认密码:"
+                android:maxLines="1"
+                android:ems="12"
+                android:textSize="25dp"
+                android:textColor="#fcf9f9"
+                android:textColorHint="#fcf9f9"
+                android:paddingLeft="@dimen/dp_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp_150"
+            >
+            <TextView
+                android:id="@+id/yiyou"
+                android:textColor="#fcf9f9"
+                android:text="已有账号?立即登录"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <Button
+                android:id="@+id/zhuce"
+                android:text="注册"
+                android:layout_marginTop="@dimen/dp_80"
+                android:layout_marginLeft="@dimen/sp_10"
+                android:background="@drawable/deng_shape_radius"
+                android:textColor="#fcf9f9"
+                android:layout_width="@dimen/dp_250"
+                android:layout_height="@dimen/dp_40" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

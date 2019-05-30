@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         >
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/yingping_item_image1"
+        fresco:roundAsCircle="true"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50" />
+
+         <TextView
+             android:id="@+id/yingping_item_name"
+             android:text="影评"
+             android:layout_marginTop="@dimen/dp_40"
+             android:layout_marginLeft="@dimen/dp_20"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+     </LinearLayout>
+
+    <TextView
+        android:id="@+id/yingping_item_ping"
+        android:text="888888"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_24"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/yingping_item_time"
+            android:text="时间"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_100"
+            android:orientation="horizontal"
+            >
+        <ImageView
+            android:id="@+id/yingping_item_zan"
+            android:src="@mipmap/com_icon_praise_default"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24" />
+        <TextView
+            android:id="@+id/yingping_item_zan_shu"
+            android:text="11111"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/dp_20"
+            >
+        <ImageView
+            android:id="@+id/yingping_item_pinglun"
+            android:src="@mipmap/com_icon_comment_default"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            />
+        <TextView
+            android:id="@+id/yingping_item_pinglun_shu"
+            android:text="11111"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+</RelativeLayout>

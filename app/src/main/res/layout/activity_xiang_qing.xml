@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fmk.activity.XiangQingActivity"
+    android:orientation="vertical"
+    android:background="@mipmap/qiangbei"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:background="@mipmap/dianying"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24" />
+    <TextView
+        android:id="@+id/dianying_xiangqing"
+        android:text="电影详情"
+        android:textColor="#fcfafa"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/xiangqing_guanzhu"
+            android:background="@drawable/selector_movie_xiang_xin"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_200"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/xiangqing_name"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_50"
+            android:textColor="#fcfafa"
+            android:text="88888888"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/xaingqing_image"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/dp_226"
+            android:layout_height="@dimen/dp_264"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_40"
+        >
+
+        <TextView
+            android:id="@+id/xiangqing_xiang"
+            android:text="详情"
+            android:textColor="#fcfafa"
+            android:background="@drawable/xiangqing_shape_radius"
+            android:textSize="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/xiangqing_yugao"
+            android:text="预告"
+            android:background="@drawable/xiangqing_shape_radius"
+            android:textSize="@dimen/dp_20"
+            android:textColor="#fcfafa"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/xiangqing_juzhao"
+            android:text="剧照"
+            android:textColor="#fcfafa"
+            android:background="@drawable/xiangqing_shape_radius"
+            android:textSize="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/xiangqing_yingping"
+            android:text="影评"
+            android:textColor="#fcfafa"
+            android:background="@drawable/xiangqing_shape_radius"
+            android:textSize="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/xiangqing_fan"
+            android:background="@mipmap/fanhui"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60" />
+
+        <TextView
+            android:id="@+id/xiangqing_gou"
+            android:text="购票"
+            android:background="@drawable/xiangqing_shape_goupiao"
+            android:textColor="#fcfafa"
+            android:layout_marginLeft="@dimen/dp_166"
+            android:layout_marginTop="@dimen/dp_12"
+            android:textSize="@dimen/dp_20"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60" />
+
+    </LinearLayout>
+
+</LinearLayout>

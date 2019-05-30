@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_10"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!--  昵称， 头像 -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/call_image"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            app:roundAsCircle="true"
+            />
+        <TextView
+            android:id="@+id/call_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/sp_14"
+            android:textColor="#333333"
+            android:text="小明"
+            />
+    </RelativeLayout>
+
+    <!--  评价  -->
+    <TextView
+        android:id="@+id/call_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp_12"
+        android:textColor="#333333"
+        android:layout_marginTop="@dimen/dp_12"
+        />
+
+    <!--  点赞  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <!--  日期时间  -->
+        <TextView
+            android:id="@+id/call_datatime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#999999"
+            android:text="10-24 13:20"
+            android:layout_centerVertical="true"
+            />
+
+        <!--  点赞 评论 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+            <!-- 点赞  -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/call_praise"
+                    android:layout_width="@dimen/sp_16"
+                    android:layout_height="@dimen/sp_16"
+                    />
+                <TextView
+                    android:id="@+id/praise_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:text="1002"
+                    android:textSize="@dimen/dp_12"
+                    android:layout_marginLeft="@dimen/dp_22"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+
+
+            <!--&lt;!&ndash;  评论 &ndash;&gt;
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_18"
+                >
+                <ImageView
+                    android:id="@+id/call_message"
+                    android:layout_width="@dimen/sp_16"
+                    android:layout_height="@dimen/sp_16"
+                    android:src="@mipmap/com_icon_comment_default"
+                    />
+                <TextView
+                    android:id="@+id/message_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/dp_12"
+                    android:text="808"
+                    android:layout_marginLeft="@dimen/dp_22"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>-->
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!--  横线  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_3"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="#f2f2f2"
+        />
+
+<!--
+  &lt;!&ndash; 点击展示 &ndash;&gt;
+&lt;!&ndash;  写评价  &ndash;&gt;
+    <RelativeLayout
+        android:id="@+id/write_call"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="#f2f2f2"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_284"
+            android:layout_height="@dimen/dp_80"
+            android:layout_alignParentLeft="true">
+            <EditText
+                android:id="@+id/call_editText"
+                android:layout_width="@dimen/dp_284"
+                android:layout_height="@dimen/dp_60"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/sp_12"
+                android:background="@drawable/shape_call_edit"
+                android:textColor="#999999"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去评论"
+                android:textSize="@dimen/sp_14"
+                android:textColor="#333333"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_10"
+                />
+        </RelativeLayout>
+        &lt;!&ndash;  发送 &ndash;&gt;
+      <TextView
+          android:id="@+id/call_send"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentBottom="true"
+          android:text="发送"
+          android:textSize="@dimen/sp_16"
+          android:textColor="#333333"
+          android:layout_marginBottom="@dimen/dp_10"
+          />
+    </RelativeLayout>-->
+
+
+</LinearLayout>
