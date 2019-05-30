@@ -95,6 +95,11 @@
             android:screenOrientation="portrait" />
 
         <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" > </activity>
         <!-- 微信支付回调函数 -->
         <activity
             android:name=".wxapi.WXPayEntryActivity"

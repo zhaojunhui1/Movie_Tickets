@@ -191,6 +191,11 @@ public class ZhuCeActivity extends BasefActivity implements VInterface.VInterfac
         String message = zhuBean2.getMessage();
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
         zhuBean.add(message);
+        if (zhuBean2.getStatus().equals("0000")){
+            Intent intent = new Intent(ZhuCeActivity.this, LogActivity.class);
+            startActivity(intent);
+            finish();
+        }
     }
 
     @Override

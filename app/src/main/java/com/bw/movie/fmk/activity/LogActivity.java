@@ -13,6 +13,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bw.movie.R;
 import com.bw.movie.fmk.base.BasefActivity;
@@ -202,9 +203,8 @@ public class LogActivity extends BasefActivity implements VInterface.VInterfaceD
         //Log.e("tab","message=="+message);
         LoginBean.ResultBean result = loginBean.getResult();
 
-
         //List<GreendaoBean> greendaoBeans = App.daoSession.loadAll();
-        //Toast.makeText(this,object1+"",Toast.LENGTH_LONG).show();
+        Toast.makeText(this,message+"",Toast.LENGTH_LONG).show();
         if (message.equals("登陆成功")){
 
             //传入头参
@@ -222,7 +222,7 @@ public class LogActivity extends BasefActivity implements VInterface.VInterfaceD
 
             Log.e("UserId", loginBean.getResult().getUserId() + "");
 
-            Intent intent = new Intent(this,FragmentActivity.class);
+            Intent intent = new Intent(this, FragmentActivity.class);
 
             intent.putExtra("nickName",loginBean.getResult().getUserInfo().getNickName());
             intent.putExtra("headPic",loginBean.getResult().getUserInfo().getHeadPic());

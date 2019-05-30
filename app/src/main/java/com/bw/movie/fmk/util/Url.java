@@ -11,7 +11,7 @@ public class Url {
     //http://mobile.bwstudent.com
     //http://172.17.8.100/
 
-    public static final String TOU = "http://mobile.bwstudent.com/";
+    public static final String TOU = "http://172.17.8.100/";
 
     //http://mobile.bwstudent.com/
     //http://172.17.8.100/

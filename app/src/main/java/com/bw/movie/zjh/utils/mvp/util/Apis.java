@@ -10,9 +10,9 @@ package com.bw.movie.zjh.utils.mvp.util;
 public class Apis {
     //  主机名
     //   内网主机名
-    //public static final String BASE_URL = "http://172.17.8.100/";
+    public static final String BASE_URL = "http://172.17.8.100/";
     //   外网主机
-    public static final String BASE_URL = "http://mobile.bwstudent.com/";
+    //public static final String BASE_URL = "http://mobile.bwstudent.com/";
 
     //6. 查询用户关注的影片列表
     public static final String MY_LIKE_MOVIE_GET = "movieApi/movie/v1/verify/findMoviePageList";

@@ -22,6 +22,7 @@ import com.alipay.sdk.app.PayTask;
 import com.bw.movie.R;
 import com.bw.movie.zjh.adapter.MyFoodedPayAdapter;
 import com.bw.movie.zjh.base.BaseFragment;
+import com.bw.movie.zjh.beans.cinema.PayTicketAlipayBean;
 import com.bw.movie.zjh.beans.cinema.PayTicketBean;
 import com.bw.movie.zjh.beans.my.MyFoodedBean;
 import com.bw.movie.zjh.ui.cinema.ChooseSeatBuyActivity;
@@ -87,6 +88,7 @@ public class MyFoodedPayFragment extends BaseFragment implements IView {
                 default:
                     break;
             }
+
         }
 
     };
@@ -216,12 +218,20 @@ public class MyFoodedPayFragment extends BaseFragment implements IView {
             @Override
             public void onClick(View v) {
                 if (radio_weixin.isChecked()) {    // 微信
-                    payType = 1;
+                    //payType = 1;
+                    Map<String, String> map1 = new HashMap<>();
+                    map1.put("payType", 1 + "");
+                    map1.put("orderId", orderId);
+                    iPresenter.postLoginPresenterData(Apis.MOVIE_TICKET_PAY, map1, PayTicketBean.class);
                 }
                 if (radio_zifubao.isChecked()) {    //支付宝
-                    payType = 2;
+                    //payType = 2;
+                    Map<String, String> map2 = new HashMap<>();
+                    map2.put("payType", 2 + "");
+                    map2.put("orderId", orderId);
+                    iPresenter.postLoginPresenterData(Apis.MOVIE_TICKET_PAY, map2, PayTicketAlipayBean.class);
                 }
-                goBuyTicket(payType, orderId);
+                //goBuyTicket(payType, orderId);
             }
         });
 
@@ -231,13 +241,12 @@ public class MyFoodedPayFragment extends BaseFragment implements IView {
      *  购票支付
      *  ￥￥￥￥￥￥
      * */
-    private void goBuyTicket(int payType, String orderId) {
+   /* private void goBuyTicket(int payType, String orderId) {
         Map<String, String> map1 = new HashMap<>();
         map1.put("payType", payType + "");
         map1.put("orderId", orderId);
-        Log.e("pay", "类型"+payType +"订单号"+orderId);
         iPresenter.postLoginPresenterData(Apis.MOVIE_TICKET_PAY, map1, PayTicketBean.class);
-    }
+    }*/
 
     /*
      *  回调函数
@@ -251,9 +260,9 @@ public class MyFoodedPayFragment extends BaseFragment implements IView {
             } else {
                 mAdapter.addDatas(myFoodedBean.getResult());
             }
-        }else if (data instanceof PayTicketBean) {
+        } else if (data instanceof PayTicketBean) {
             final PayTicketBean payTicketBean = (PayTicketBean) data;
-            Log.e("pay", "支付宝"+payTicketBean.getResult());
+            Log.e("pay", "支付宝" + payTicketBean.getResult());
             if (payTicketBean.getStatus().equals("0000")) {
                 //微信支付
                 try {
@@ -275,12 +284,17 @@ public class MyFoodedPayFragment extends BaseFragment implements IView {
                     Log.e("xxx", e.getMessage());
                 }
 
+            }
+
+        } else if (data instanceof PayTicketAlipayBean) {
+            final PayTicketAlipayBean alipayBean = (PayTicketAlipayBean) data;
+            if (alipayBean.getStatus().equals("0000")) {
                 //支付宝支付
                 Runnable payRunnable = new Runnable() {
                     @Override
                     public void run() {
                         PayTask alipay = new PayTask(getActivity());
-                        Map<String, String> result = alipay.payV2(payTicketBean.getResult(), true);
+                        Map<String, String> result = alipay.payV2(alipayBean.getResult(), true);
                         Message msg = new Message();
                         msg.what = SDK_PAY_FLAG;
                         msg.obj = result;

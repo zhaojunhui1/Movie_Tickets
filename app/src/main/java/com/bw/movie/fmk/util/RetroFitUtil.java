@@ -65,7 +65,7 @@ public class RetroFitUtil {
     private class httplog implements HttpLoggingInterceptor.Logger {
         @Override
         public void log(String message) {
-            Log.e("tab1","拦截=="+message);
+            //Log.e("tab1","拦截=="+message);
         }
     }
 

@@ -26,6 +26,7 @@ import com.alipay.sdk.app.PayTask;
 import com.bw.movie.R;
 import com.bw.movie.app.App;
 import com.bw.movie.zjh.beans.cinema.BuyMovieTicketBean;
+import com.bw.movie.zjh.beans.cinema.PayTicketAlipayBean;
 import com.bw.movie.zjh.beans.cinema.PayTicketBean;
 import com.bw.movie.zjh.ui.cinema.seak.SeatTable;
 import com.bw.movie.zjh.utils.md5.MDUtils;
@@ -170,7 +171,7 @@ public class ChooseSeatBuyActivity extends Activity implements IView {
         map.put("amount", amount + "");
         map.put("sign", s);
         iPresenter.postLoginPresenterData(Apis.BUY_MOVIE_TICKET, map, BuyMovieTicketBean.class);
-        Log.e("tab","mapzjh=="+map);
+        Log.e("tab", "mapzjh==" + map);
     }
 
     /*
@@ -226,14 +227,23 @@ public class ChooseSeatBuyActivity extends Activity implements IView {
             @Override
             public void onClick(View v) {
                 if (radio_weixin.isChecked()) {    // 微信
-                    payType = 1;
+                    //payType = 1;
+                    Map<String, String> map1 = new HashMap<>();
+                    map1.put("payType", 1 + "");
+                    map1.put("orderId", orderId);
+                    iPresenter.postLoginPresenterData(Apis.MOVIE_TICKET_PAY, map1, PayTicketBean.class);
                 }
                 if (radio_zifubao.isChecked()) {    //支付宝
-                    payType = 2;
+                    //payType = 2;
+                    Map<String, String> map2 = new HashMap<>();
+                    map2.put("payType", 2 + "");
+                    map2.put("orderId", orderId);
+                    iPresenter.postLoginPresenterData(Apis.MOVIE_TICKET_PAY, map2, PayTicketAlipayBean.class);
                 }
-                goBuyTicket(payType);
+                //goBuyTicket(payType, orderId);
             }
         });
+
 
     }
 
@@ -241,13 +251,12 @@ public class ChooseSeatBuyActivity extends Activity implements IView {
      *  购票支付
      *  ￥￥￥￥￥￥
      * */
-    private void goBuyTicket(int payType) {
+   /* private void goBuyTicket(int payType) {
         Map<String, String> map1 = new HashMap<>();
         map1.put("payType", payType + "");
         map1.put("orderId", orderId);
-        Log.e("pay", "类型"+payType +"订单号"+orderId);
         iPresenter.postLoginPresenterData(Apis.MOVIE_TICKET_PAY, map1, PayTicketBean.class);
-    }
+    }*/
 
 
     /*
@@ -335,7 +344,8 @@ public class ChooseSeatBuyActivity extends Activity implements IView {
 
         } else if (data instanceof PayTicketBean) {
             final PayTicketBean payTicketBean = (PayTicketBean) data;
-            Log.e("pay", "支付宝"+payTicketBean.getResult());
+
+            Log.e("pay", "支付宝" + payTicketBean.getResult());
             if (payTicketBean.getStatus().equals("0000")) {
                 //微信支付
                 try {
@@ -357,12 +367,17 @@ public class ChooseSeatBuyActivity extends Activity implements IView {
                     Log.e("xxx", e.getMessage());
                 }
 
+            }
+
+        } else if (data instanceof PayTicketAlipayBean) {
+            final PayTicketAlipayBean alipayBean = (PayTicketAlipayBean) data;
+            if (alipayBean.getStatus().equals("0000")) {
                 //支付宝支付
                 Runnable payRunnable = new Runnable() {
                     @Override
                     public void run() {
                         PayTask alipay = new PayTask(ChooseSeatBuyActivity.this);
-                        Map<String, String> result = alipay.payV2(payTicketBean.getResult(), true);
+                        Map<String, String> result = alipay.payV2(alipayBean.getResult(), true);
                         Message msg = new Message();
                         msg.what = SDK_PAY_FLAG;
                         msg.obj = result;
@@ -373,7 +388,6 @@ public class ChooseSeatBuyActivity extends Activity implements IView {
                 Thread payThread = new Thread(payRunnable);
                 payThread.start();
             }
-
         }
 
     }
